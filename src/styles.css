@@ -1,7 +1,9 @@
 body {
     display: flex;
     margin: 0;
-    min-height: 1000vh;
+    padding: 0;
+    height: 100vh;
+   
     justify-content: center;
     align-items: center;
 }
@@ -11,21 +13,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .img-frame {
     border: solid 2px black;
     width: 800px;
     height: 500px;
-    position: relative;
     display: flex;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .left-arrow {
     content: url("./leftarrow.svg");
     height: 50px;
     width: 50px;
+    left: 1px;
 }
 
 .right-arrow {
@@ -33,7 +36,6 @@ body {
     height: 50px;
     width: 50px;
     right: 1px;
-  
 }
 
 .left-arrow,
@@ -41,4 +43,22 @@ body {
     top: 210px;
     cursor: pointer;
     position: absolute;
+}
+
+.indicator {
+    position: absolute;
+    color: white;
+    top: 450px;
+}
+
+button {
+   border-radius: 100%;
+   width: 10px;
+   height: 10px;
+   border: none;
+   cursor: pointer;
+}
+
+.visibility {
+    display: none;
 }
