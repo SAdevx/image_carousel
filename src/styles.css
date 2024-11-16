@@ -62,3 +62,7 @@ button {
 .visibility {
     display: none;
 }
+
+.btn-background {
+    background-color: black;
+}
